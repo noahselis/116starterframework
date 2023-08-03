@@ -1,0 +1,102 @@
+/* ================== */
+/* === Footer CTA === */
+/* ================== */
+
+#footer-cta {
+    color: #ffffff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 20px;
+    padding: 200px 0;
+}
+
+#footer-cta .inner :nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+#footer-cta .inner {
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+}
+
+#footer-cta .inner h2 {
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer-cta .inner p {
+    font-size: 24px;
+    line-height: 34px;
+    margin: 0 auto 50px;
+    width: 675px;
+}
+
+#footer-cta .inner a {
+    width: 200px;
+    margin: 0 10px;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #footer-cta {
+        padding: 160px 0;
+    }
+
+    #footer-cta .inner h2,
+    #footer-cta .inner p {
+        width: 80%;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #footer-cta {
+        padding: 120px 0;
+    }
+
+    #footer-cta .inner h2,
+    #footer-cta .inner p {
+        width: 100%;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    #footer-cta .inner :nth-last-child(1) {
+        margin-top: 30px;
+    }
+
+}
+
+
+
+
+
+
+

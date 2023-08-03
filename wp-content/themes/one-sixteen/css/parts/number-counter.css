@@ -1,0 +1,140 @@
+/* ====================== */
+/* === Number Counter === */
+/* ====================== */
+
+#number-counter {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+#number-counter .heading {
+    margin-bottom: 80px;
+}
+
+#number-counter .heading h2,
+#number-counter .heading p {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#number-counter .heading h2 {
+    width: 560px;
+    margin-bottom: 0;
+}
+
+#number-counter .heading p {
+    width: 700px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#number-counter .column {
+    width: 270px;
+    padding: 0 30px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#number-counter .column .icon {
+    margin-bottom: 25px;
+}
+
+#number-counter .column .icon img {
+    width: 90px;
+}
+
+#number-counter .column .number p {
+    vertical-align: top;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 56px;
+    line-height: 1;
+}
+
+#number-counter .column .text p {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+    margin-bottom: 0;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+    #number-counter .column {
+        width: 220px;
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #number-counter {
+        margin-bottom: 140px;
+    }
+
+    #number-counter .column {
+        width: 160px;
+    }
+
+    #number-counter .column .number p {
+        font-size: 36px;
+    }
+
+    #number-counter .column .text p {
+        font-size: 16px;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #number-counter .column .text p {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    #number-counter .heading h2,
+    #number-counter .heading p {
+        width: 100%;
+        padding: 0 40px;
+    }
+
+    #number-counter .column {
+        width: 100%;
+        margin-bottom: 80px;
+    }
+
+    #number-counter .column:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

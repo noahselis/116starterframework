@@ -1,0 +1,115 @@
+/* ===================== */
+/* === Photo Gallery === */
+/* ===================== */
+
+#photo-gallery {
+    margin-bottom: 100px;
+}
+
+#photo-gallery h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#photo-gallery .column {
+    margin-bottom: 30px;
+}
+
+#photo-gallery .column .imagebox {
+	width: 100%;
+	padding-top: 75%;
+	position: relative;
+	display: block;
+	z-index: 0;
+	overflow: hidden;
+	background-color: #000;
+}
+
+#photo-gallery .column .imagebox .thumbnail {
+    opacity: 1;
+    transform: scale(1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease-in-out;
+}
+
+#photo-gallery .column .imagebox:hover .thumbnail {
+    opacity: 0.8;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

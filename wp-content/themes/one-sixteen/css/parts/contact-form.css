@@ -1,0 +1,72 @@
+/* ==================== */
+/* === Contact Form === */
+/* ==================== */
+
+#contact-form {
+    padding-top: 200px;
+    margin-bottom: 100px;
+}
+
+#contact-form p {
+    font-size: 18px;
+}
+
+#contact-form p span {
+    display: block;
+}
+
+#contact-form .text {
+    margin-bottom: 0;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #contact-form {
+        padding-top: 140px;
+    }
+
+    #contact-form .text {
+        margin-bottom: 60px;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

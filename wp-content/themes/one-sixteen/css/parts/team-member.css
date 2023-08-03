@@ -1,0 +1,99 @@
+/* =================== */
+/* === Team Member === */
+/* =================== */
+
+#team-member {
+    padding-top: 200px;
+    margin-bottom: 140px;
+}
+
+#team-member .backlink {
+    margin-bottom: 60px;
+}
+
+#team-member .name {
+    margin-bottom: 10px;
+}
+
+#team-member .picture {
+    margin-bottom: 20px;
+}
+
+#team-member .picture img {
+    width: 100%;
+}
+
+#team-member .phone,
+#team-member .email {
+    margin-bottom: 5px;
+}
+
+#team-member .side.desktop {
+    display: block;
+    visibility: visible;
+}
+
+#team-member .phone.mobile,
+#team-member .email.mobile,
+#team-member .picture.mobile {
+    display: none;
+    visibility: hidden;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #team-member {
+        padding-top: 160px;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #team-member .side.desktop {
+        display: none;
+        visibility: hidden;
+    }
+    
+    #team-member .phone.mobile,
+    #team-member .email.mobile,
+    #team-member .picture.mobile {
+        display: block;
+        visibility: visible;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

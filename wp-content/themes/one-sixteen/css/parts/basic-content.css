@@ -1,0 +1,59 @@
+/* ===================== */
+/* === Basic Content === */
+/* ===================== */
+
+#basic-content {
+    background: #ffffff;
+    margin-bottom: 100px;
+}
+
+/* Enable if you want the last element to have no bottom margin */
+/* #basic-content .container :nth-last-child(1) {
+    margin-bottom: 0;
+} */
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

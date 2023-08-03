@@ -1,0 +1,698 @@
+/* ============== */
+/* === Header === */
+/* ============== */
+
+#masthead {
+    height: 120px;
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    z-index: 50;
+    background: #000000;
+    transition: all 0.5s ease-in-out;
+}
+
+.home #masthead.top.big {
+    background: transparent;
+}
+
+#masthead.hide {
+    margin-top: -120px;
+    transition: all 0.5s ease-in-out;   
+}
+
+#masthead a {
+    line-height: 1 !important;
+}
+
+#masthead > .container {
+    display: block;
+    height: 100%;
+    clear: both;
+}
+
+#menu-wrapper {
+    float: right;
+    display: block;
+    height: 100%;
+}
+
+/* ============ */
+/* === Logo === */
+/* ============ */
+
+#site-logo {
+    float: left; 
+}
+
+#site-logo a {
+    height: 80px;
+    margin-top: 20px;
+    background: none !important;
+    display: block;
+    outline-offset: 8px;
+    transition: all 0.5s ease-in-out;  
+}
+
+#site-logoa a:hover,
+#site-logo a:focus {
+    outline: 1px dashed #777;
+    outline-offset: 8px;
+}
+
+#site-logo a img {
+    height: 100%;
+    width: auto;
+}
+
+.home #masthead.top.big #site-logo a {
+    height: 100px;
+    margin-top: 26px;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ==================== */
+/* === Primary Menu === */
+/* ==================== */
+
+#primary-menu {
+    margin-top: 0;
+    padding-bottom: 0;
+    display: inline-block;
+}
+
+#primary-menu .menu {
+    margin: 0;
+    padding: 0;
+}
+
+#primary-menu .menu > .menu-item {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    padding: 15px 20px;
+    margin-right: -20px;
+    margin-top: 0 !important;
+}
+
+#primary-menu .menu > .menu-item > a {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: inherit;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    padding-bottom: 3px;
+    outline: none !important;
+    text-decoration: none;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#primary-menu .menu > .menu-item:hover > a,
+#primary-menu .menu > .menu-item > a:focus,
+#primary-menu .menu > .menu-item.is-open > a,
+#primary-menu .menu > .menu-item.current-menu-item > a, 
+#primary-menu .menu > .menu-item.current_page_parent > a {
+    color: #ffffff;
+    border-bottom: 2px solid #ffe400;
+    background: none;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#primary-menu .menu > .menu-item > .sub-menu {
+    display: none;
+    position: absolute;
+    top: auto;
+    left: 0;
+    margin-top: 15px;
+    z-index: 5;
+    width: 220px;
+    padding: 15px;
+    background: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.25);
+}
+
+#primary-menu .menu > .menu-item:hover > .sub-menu,
+#primary-menu .menu > .menu-item.is-open > .sub-menu {
+    display: block;
+}
+
+#primary-menu .menu > .menu-item > .sub-menu > .menu-item {
+    list-style: none;
+    padding: 10px;
+    line-height: 1;
+    margin-top: 0 !important;
+}
+
+#primary-menu .menu > .menu-item > .sub-menu > .menu-item > a {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    letter-spacing: 0.1px;
+    color: #000000;
+    background: transparent;
+}
+
+#primary-menu .menu > .menu-item > .sub-menu > .menu-item > a:hover,
+#primary-menu .menu > .menu-item > .sub-menu > .menu-item > a:focus {
+    color: #000000;
+    background: #ffe400;
+    outline: none !important;
+    text-decoration: underline;
+}
+
+#primary-menu .menu > .menu-item button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    z-index: -1;
+    border: none;
+    outline: none;
+    outline-offset: -8px;
+    background: none;
+}
+
+#primary-menu .menu > .menu-item button:focus {
+    outline: 1px dashed #777;
+}
+
+#primary-menu .menu > .menu-item button::after {
+    display: none;
+}
+
+#primary-menu .menu > .menu-item-has-children > a {
+    padding-right: 15px;
+}
+
+#primary-menu .menu > .menu-item-has-children > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    color: #ffffff;
+    font-size: 9px;
+    line-height: 1;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -1px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+
+#primary-menu .menu > .menu-item-has-children:hover > a::after,
+#primary-menu .menu > .menu-item-has-children.is-open > a::after,
+#primary-menu .menu > .menu-item-has-children.current-menu-item > a::after, 
+#primary-menu .menu > .menu-item-has-children.current_page_parent > a::after {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+#primary-menu .menu > .menu-item button span {
+    position: absolute !important;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    word-break: normal !important;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+#primary-menu .menu-primary-menu-container {
+    display: inline-block;
+}
+
+#primary-cta {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+#primary-cta a {
+    font-size: 14px;
+    padding: 10px 36px;
+    margin-right: 0;
+}
+
+/* ====================== */
+/* === Secondary Menu === */
+/* ====================== */
+
+#secondary-menu {
+    display: block;
+    text-align: right;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-top: 2px;
+}
+
+#secondary-menu .menu-secondary-menu-container {
+    display: inline-block;
+}
+
+#secondary-menu .menu {
+    margin: 0;
+    padding: 0;
+}
+
+#secondary-menu .menu > .menu-item {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    margin-top: 0 !important;
+}
+
+#secondary-menu .menu > .menu-item > a {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    color: #ffffff;
+    background: transparent;
+    outline: none !important;
+    text-decoration: none;
+    position: relative;
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+#secondary-menu .menu > .menu-item:hover > a,
+#secondary-menu .menu > .menu-item > a:focus {
+    text-decoration: underline;
+    color: #ffe400;
+    background: none;
+    transition: all 0.3s ease-in-out;
+}
+
+#secondary-cta {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#secondary-cta a {
+    margin-right: 0;
+}
+
+#secondary-cta a {
+    font-size: 12px;
+    margin-left: 20px;
+    padding: 6px 28px;
+}
+
+#hamburger-menu #secondary-cta a {
+    font-size: 20px;
+    margin-left: 0;
+    padding: 10px 42px;
+}
+
+/* ====================== */
+/* === Hamburger Menu === */
+/* ====================== */
+
+/* === OPENER === */
+
+#hamburger-opener {
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#hamburger-opener button {
+    font-size: 28px;
+    color: #ffffff;
+    padding: 0;
+    line-height: 1;
+    background: none;
+    border: none;
+    outline: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-opener button:hover,
+#hamburger-opener button:focus {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* === CLOSER === */
+
+#hamburger-closer {
+    position: absolute;
+    top: 60px;
+    left: auto;
+    right: 30px;
+}
+
+#hamburger-image.pos-left #hamburger-closer {
+    left: 60px;
+    right: auto;
+}
+
+#hamburger-closer button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    color: #000000;
+    background: #ffffff;
+    padding: 12px 24px;
+    line-height: 1;
+    border: none;
+    outline: none !important;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-closer button:hover,
+#hamburger-closer button:focus {
+    color: #000000;
+    background: #ffffff;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+/* === LINKS PANE === */
+
+#hamburger-links {
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: #333333;
+    position: fixed;
+    z-index: 100;
+    visibility: hidden;
+}
+
+#hamburger-links.open {
+    visibility: visible;
+}
+
+#hamburger-links.pos-left {
+    left: 0;
+    margin-left: -50%;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-links.pos-left.open {
+    margin-left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-links.pos-right {
+    right: 0;
+    margin-right: -50%;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-links.pos-right.open {
+    margin-right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* === IMAGE PANE === */
+
+#hamburger-image {
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    right: 0;
+    position: fixed;
+    z-index: 100;
+    background-image: url("/wp-content/uploads/2021/04/image-pane-placeholder.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-image.open {
+    visibility: visible;
+}
+
+#hamburger-image.pos-left {
+    left: 0;
+    margin-left: -50%;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-image.pos-left.open {
+    margin-left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-image.pos-right {
+    right: 0;
+    margin-right: -50%;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-image.pos-right.open {
+    margin-right: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* === NAVIGATION === */
+
+#hamburger-menu {
+    height: 100%;
+}
+
+#hamburger-menu .menu-inner {
+    height: 100%;
+    padding: 160px 100px 120px;
+    overflow-y: auto;
+}
+
+#hamburger-menu .menu {
+    padding: 0;
+    margin: 0;
+}
+
+#hamburger-menu .menu > .menu-item {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+#hamburger-menu .menu > .menu-item > a {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    color: #ffffff;
+    border-bottom: 2px solid transparent;
+    background: transparent;
+    line-height: 1;
+    vertical-align: middle;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    display: inline-block;
+    text-decoration: none !important;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-menu .menu > .menu-item.is-open > a,
+#hamburger-menu .menu > .menu-item > a:hover,
+#hamburger-menu .menu > .menu-item > a:focus {
+    color: #ffffff;
+    border-bottom: 2px solid #ffe400;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-menu .menu > .menu-item button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background: transparent;
+}
+
+#hamburger-menu .menu > .menu-item button:focus {
+    outline: 1px dashed #777;
+    outline-offset: 0;
+}
+
+#hamburger-menu .menu > .menu-item button::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f067";
+    color: #ffffff;
+    font-size: 18px;
+    border: none;
+    margin: 0;
+    line-height: 1;
+    vertical-align: middle;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-menu .menu > .menu-item button:hover::after,
+#hamburger-menu .menu > .menu-item button:focus::after {
+    color: #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger-menu .menu > .menu-item.is-open button::after {
+    content: "\f068";
+}
+
+/* === SUB MENUS === */
+
+#hamburger-menu .menu > .menu-item > .sub-menu {
+    display: none;
+    padding-top: 15px;
+    padding-left: 0;
+}
+
+#hamburger-menu .menu > .menu-item.is-open > .sub-menu {
+    display: block;
+}
+
+#hamburger-menu .menu > .menu-item > .sub-menu > .menu-item {
+    list-style: none;
+    padding-bottom: 15px;
+    margin-top: 0 !important;
+}
+
+#hamburger-menu .menu > .menu-item > .sub-menu > .menu-item:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+#hamburger-menu .menu > .menu-item > .sub-menu > .menu-item > a {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: inherit;
+    letter-spacing: inherit;
+    color: #ffffff;
+    background: transparent;
+    line-height: 1;
+}
+
+#hamburger-menu .menu > .menu-item > .sub-menu > .menu-item > a:hover,
+#hamburger-menu .menu > .menu-item > .sub-menu > .menu-item > a:focus {
+    color: #ffe400;
+    background: transparent;
+    outline: none !important;
+    text-decoration: underline !important;
+}
+
+/* === SECONDARY === */
+
+#hamburger-menu #menu-secondary-menu {
+    margin-top: 60px;
+}
+
+#hamburger-menu #menu-secondary-menu > .menu-item {
+    margin-bottom: 15px;
+}
+
+#hamburger-menu #menu-secondary-menu > .menu-item:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+#hamburger-menu #secondary-cta {
+    margin-top: 60px;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #masthead {
+        height: 80px;
+    }
+
+    #masthead.hide {
+        margin-top: -80px;
+    }
+
+    #site-logo a,
+    .home #masthead.top.big #site-logo a {
+        height: 52px;
+        margin-top: 15px;
+    }
+
+    #hamburger-image {
+        display: none;
+    }
+
+    #hamburger-links {
+        width: 100%;
+    }
+    
+    #hamburger-links.pos-left,
+    #hamburger-links.pos-right {
+        left: auto;
+        right: 0;
+        margin-right: -100%;
+        margin-left: auto;
+    }
+
+    #hamburger-links.pos-left.open,
+    #hamburger-links.pos-right.open {
+        margin-right: 0;
+    }
+
+    #hamburger-closer {
+        top: 30px;
+        right: 30px;
+    }
+
+    #hamburger-menu .menu-inner {
+        padding: 160px 100px 120px;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #hamburger-menu .menu-inner {
+        padding: 160px 80px 120px;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+    #hamburger-menu .menu-inner {
+        padding: 160px 60px 120px;
+    }
+
+}
+
+
+
+
+

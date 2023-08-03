@@ -1,0 +1,144 @@
+/* =================== */
+/* === Recent News === */
+/* =================== */
+
+#recent-news {
+    margin-bottom: 100px;
+}
+
+#recent-news h2 {
+    text-align: center;
+}
+
+#recent-news .news-post .postlink {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    position: absolute;
+    background: none !important;
+}
+
+#recent-news .news-post .imgwrap {
+    width: 100%;
+    padding-top: 52.3%;
+    overflow: hidden;
+    position: relative;
+}
+
+#recent-news .news-post .imgwrap .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transform: scale(1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	transition: all 0.3s ease-in-out;
+}
+
+#recent-news .news-post:hover .imgwrap .image {
+	transform: scale(1.05);
+	transition: all 0.3s ease-in-out;
+}
+
+#recent-news .news-post .category {
+	margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#recent-news .news-post .category ul {
+    padding: 0;
+    margin: 0;
+}
+
+#recent-news .news-post .category ul li {
+    list-style: none;
+}
+
+#recent-news .news-post .category ul li a {
+    color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: inherit;
+    letter-spacing: 1.25px;
+    line-height: inherit;
+    text-transform: uppercase;
+    margin-bottom: 5px;   
+    text-decoration: none !important;
+    pointer-events: none !important;
+}
+
+#recent-news .news-post .title {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.25;  
+    letter-spacing: 0.5px;
+    text-transform: none;
+    margin-bottom: 0;
+    display: inline;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+#recent-news .news-post:hover .title {
+    text-decoration: underline;
+    background: #ffe400;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #recent-news .news-post {
+        margin-bottom: 60px;
+    }
+    
+    #recent-news .news-post:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

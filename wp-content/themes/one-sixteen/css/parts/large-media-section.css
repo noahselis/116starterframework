@@ -1,0 +1,106 @@
+/* =========================== */
+/* === Large Media Section === */
+/* =========================== */
+
+#large-media-section {
+    margin-bottom: 100px;
+}
+
+#large-media-section .text {
+    margin-bottom: 80px;
+}
+
+#large-media-section .text .inner {
+    width: 70%;
+}
+
+#large-media-section .text.left-aligned .inner {
+    text-align: left;
+    margin: 0;
+}
+
+#large-media-section .text.center-aligned .inner {
+    text-align: center;
+    margin: auto;
+}
+
+#large-media-section .text p {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 40px;
+}
+
+#large-media-section .text a {
+    width: 200px;
+    margin: 0 0 10px;
+}
+
+#large-media-section .text .inner :nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+#large-media-section .image img {
+    width: 100%;
+    height: auto;
+}
+
+#large-media-section .video {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+#large-media-section .video iframe {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #large-media-section .text.center-aligned .inner {
+        width: 80%;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #large-media-section .text.center-aligned .inner {
+        width: 100%;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+
+
+
+
+
+

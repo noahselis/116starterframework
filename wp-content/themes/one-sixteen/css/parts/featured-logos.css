@@ -1,0 +1,131 @@
+/* ====================== */
+/* === Featured Logos === */
+/* ====================== */
+
+#featured-logos {
+	text-align: center;
+    margin-bottom: 140px;
+}
+
+#featured-logos .text {
+    text-align: center;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 20px;
+}
+
+#featured-logos .text h2 {
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+#featured-logos .text p {
+    font-size: 24px;
+    line-height: 34px;
+    width: 675px;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+#featured-logos img {
+	width: 100%;
+}
+
+#featured-logos .viewlink {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#featured-logos .viewlink button {
+    margin: 0;
+}
+
+#featured-logos .viewlink.opened button.more,
+#featured-logos .viewlink.closed button.less {
+	display: none;
+}
+
+#featured-logos .viewlink.closed button.more,
+#featured-logos .viewlink.opened button.less {
+	display: inline-block;
+}
+
+#featured-logos .logo {
+	margin-bottom: 30px;
+}
+
+#featured-logos .secondary-logos.closed .outer {
+	height: 0 !important;
+	overflow: hidden;
+	transition: all 0.5s ease-in-out;
+}
+
+#featured-logos .secondary-logos.opened .outer {
+	overflow: visible;
+	transition: all 0.5s ease-in-out;
+}
+
+#featured-logos .secondary-logos.closed .logo img {
+	opacity: 0;
+	transform: scale(0.5);
+    transition: all 0.5s ease-in-out;
+}
+
+#featured-logos .secondary-logos.opened .logo img {
+	opacity: 1;
+	transform: scale(1);
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #featured-logos .text h2,
+    #featured-logos .text p {
+        width: 100%;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

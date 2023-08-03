@@ -1,0 +1,170 @@
+/* =================== */
+/* === Zoom Blocks === */
+/* =================== */
+
+#zoom-blocks {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+#zoom-blocks .right-column {
+    margin-top: 60px;
+}
+
+#zoom-blocks .zoomblock {
+    display: block;
+    background: #000;
+    width: 100%;
+    padding-top: 80%; /* Change to 100% for a perfect square */
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    outline-offset: 5px;
+}
+
+#zoom-blocks .zoomblock:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+#zoom-blocks .zoomblock:focus {
+    outline: 1px dashed #666666;
+    outline-offset: 10px;
+}
+
+#zoom-blocks .zoomblock .background {
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+    transform: scale(1);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-in-out;
+}
+
+#zoom-blocks .zoomblock:hover .background,
+#zoom-blocks .zoomblock:focus .background {
+    opacity: 0.6;
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+}
+
+#zoom-blocks .zoomblock .slideout {
+    position: absolute;
+    width: 80%;
+    left: -80%;
+    bottom: 20px;
+    z-index: 5;
+    background: #ffe400;
+    transition: all 0.3s ease-in-out;
+}
+
+#zoom-blocks .zoomblock:hover .slideout,
+#zoom-blocks .zoomblock:focus .slideout {
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+#zoom-blocks .zoomblock .slideout .inner {
+    padding: 20px;
+}
+
+#zoom-blocks .zoomblock .slideout  h3 {
+    color: #000;
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    line-height: 1.25;
+}
+
+#zoom-blocks .zoomblock .slideout  p {
+    color: #000;
+    margin: 0;
+    line-height: 1.25;
+}
+
+#zoom-blocks .text .inner {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#zoom-blocks .text p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+#zoom-blocks .text.mobile-only {
+    margin-bottom: 40px;
+}
+
+#zoom-blocks .text.mobile-only .inner {
+    padding: 0 45px;
+}
+
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #zoom-blocks .zoomblock {
+        padding-top: 100%;
+    }
+
+    #zoom-blocks .zoomblock .slideout {
+        left: 0;
+    }
+
+    #zoom-blocks .zoomblock .background {
+        opacity: 0.8 !important;
+        transform: scale(1) !important;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #zoom-blocks .zoomblock {
+        padding-top: 80%;
+    }
+
+    #zoom-blocks .right-column {
+        margin-top: 30px;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

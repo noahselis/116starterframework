@@ -1,0 +1,203 @@
+/* ======================== */
+/* === Internal Heading === */
+/* ======================== */
+
+#internal-heading {
+    padding-top: 200px;
+    margin-bottom: 120px;
+}
+
+#internal-heading img {
+    -webkit-filter: contrast(1.5) grayscale(0.5) saturate(2) blur(1px);
+    filter: contrast(1.5) grayscale(0.5) saturate(2) blur(1px);
+}
+
+#internal-heading .text p {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 0;
+}
+
+#internal-heading .text .linkwrap {
+    margin-top: 20px;
+}
+
+#internal-heading .text .linkwrap a {
+    margin-top: 25px;
+    width: 200px;
+}
+
+/* Image Right */
+
+#internal-heading.image-right .text .inner {
+    top: calc(50% - 10px);
+    transform: translateY(-50%);
+    position: relative;
+}
+
+#internal-heading.image-right .image img {
+    width: 100%;
+}
+
+/* Image Below */
+
+#internal-heading.image-below .text .inner {
+    width: 70%;
+}
+
+#internal-heading.image-below .text.left-aligned .inner {
+    text-align: left;
+    margin: 0;
+}
+
+#internal-heading.image-below .text.center-aligned .inner {
+    text-align: center;
+    margin: auto;
+}
+
+#internal-heading.image-below .image {
+    width: 100%;
+    height: 400px;
+    margin-top: 80px;
+}
+#internal-heading.image-below .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Image Background */
+
+#internal-heading.image-back {
+    color: #ffffff;
+    padding-top: 120px;
+}
+
+#internal-heading.image-back .container {
+    z-index: 1;
+    position: relative;
+}
+
+#internal-heading.image-back .text {
+    padding: 120px 0 160px;
+}
+
+#internal-heading.image-back .text .inner {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+#internal-heading .background {
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #internal-heading {
+        padding-top: 160px;
+    }
+
+    /* Image right */
+
+    #internal-heading.image-right .row {
+        flex-direction: column-reverse;
+    }
+
+    #internal-heading.image-right .text .inner {
+        top: auto;
+        transform: none;
+    }
+
+    #internal-heading.image-right .image {
+        margin-bottom: 30px;
+    }
+
+    #internal-heading.image-right .image img {
+        object-fit: cover;
+        height: 200px;
+    }
+
+    /* Image below */
+
+    #internal-heading.image-below .text .inner {
+        width: 80%;
+    }
+
+    /* Image back */
+
+    #internal-heading.image-back {
+        padding-top: 80px;
+    }
+
+    #internal-heading.image-back .text .inner {
+        width: 80%;
+    }
+
+    #internal-heading.image-back .text {
+        padding: 100px 0 140px;
+    }
+    
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    /* Image below */
+
+    #internal-heading.image-below .text .inner {
+        width: 100%;
+    }
+
+    /* Image back */
+
+    #internal-heading.image-back .text .inner {
+        width: 100%;
+    }
+
+    #internal-heading.image-back .text {
+        padding: 80px 0 120px;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

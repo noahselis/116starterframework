@@ -1,0 +1,66 @@
+/* ================= */
+/* === Logo Grid === */
+/* ================= */
+
+#logo-grid {
+	text-align: center;
+    margin-bottom: 80px;
+}
+
+#logo-grid h2 {
+    margin-bottom: 45px;
+}
+
+#logo-grid .logo {
+    margin-bottom: 25px;
+}
+
+#logo-grid .logo img {
+    width: 100%;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+
+
+
+

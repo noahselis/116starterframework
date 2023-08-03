@@ -1,0 +1,353 @@
+/* ===================== */
+/* === Font Families === */
+/* ===================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* =============== */
+/* === General === */
+/* =============== */
+
+body {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.1px;
+    line-height: 1.5;
+    margin: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+body.menu-open {
+    overflow-y: hidden;
+}
+
+body.menu-open #page {
+    visibility: hidden;;
+}
+
+#page {
+    visibility: visible;
+}
+
+p, ul, ol {
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+li > ul, li > ol {
+    margin: 0;
+}
+
+ul > li:nth-child(1),
+ol > li:nth-child(1) {
+    margin-top: 0;
+}
+
+li{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+li > ul > li,
+li > ol > li {
+    margin-top: 5px !important;
+}
+
+h1, h2,
+h3, h4 {
+    margin-top: 0;
+}
+
+h1 {
+    color: inherit;
+    font-family: inherit;
+    font-size: 52px;
+    font-weight: inherit;
+    font-style: inherit;
+    letter-spacing: inherit;
+    line-height: 1.25;
+    text-transform: none;
+    margin-bottom: 25px;
+}
+
+h2 {
+    color: inherit;
+    font-family: inherit;
+    font-size: 36px;
+    font-weight: inherit;
+    font-style: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    text-transform: none;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: inherit;
+    font-family: inherit;
+    font-size: 28px;
+    font-weight: inherit;
+    font-style: inherit;
+    letter-spacing: inherit;
+    line-height: inherit;
+    text-transform: none;
+    margin-bottom: 25px;   
+}
+
+h4 {
+    color: inherit;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: inherit;
+    letter-spacing: 1.25px;
+    line-height: inherit;
+    text-transform: uppercase;
+    margin-bottom: 5px;   
+}
+
+a,
+a:active,
+a:visited {
+    color: #3b86cb;
+    background: transparent;
+    text-decoration: none;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+a:hover, 
+a:focus {
+    color: #000000;
+    background: #ffe400;
+    text-decoration: underline;
+    /* transition: all 0.3s ease-in-out; */
+    outline: none;
+}
+
+.button {
+    padding: 12px 42px;
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    border-radius: 30px;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.button:active,
+.button:visited {
+    text-decoration: none;
+}
+
+.button:hover, 
+.button:focus {
+    text-decoration: underline;
+    /* transition: all 0.3s ease-in-out; */
+}
+
+.button.style1,
+.button.style1:active,
+.button.style1:visited {
+    color: #ffffff;
+    background: #3b86cb;
+    border: 2px solid #3b86cb;
+}
+
+.button.style1:hover, 
+.button.style1:focus {
+    color: #000000;
+    background: #ffe400;
+    border: 2px solid #ffe400;
+}
+
+.button.style2,
+.button.style2:active,
+.button.style2:visited {
+    color: #3b86cb;
+    background: transparent;
+    border: 2px solid #3b86cb;
+}
+
+.button.style2:hover, 
+.button.style2:focus {
+    color: #000000;
+    background: #ffe400;
+    border: 2px solid #ffe400;
+}
+
+.v-align {
+    top: 50%;
+    transform: translateY(-50%);
+    position: relative;
+}
+
+.desktop-only {
+    display: block;
+    visibility: visible;
+}
+
+.mobile-only {
+    display: none;
+    visibility: hidden;
+}
+
+.hidden {
+    display: none;
+}
+
+section {
+    display: inline-block;
+    clear: both;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.gutter {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.gutter.narrow {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.gutter.extra-narrow {
+    padding-left: 210px;
+    padding-right: 210px;
+}
+
+/* ================ */
+/* === Colorbox === */
+/* ================ */
+
+#cboxOverlay {
+    background: #000;
+    opacity: 0.95 !important;
+}
+
+#cboxContent {
+    margin-top: 12px !important;
+}
+
+#cboxClose {
+    background: none;
+    color: #fff;
+    width: 100px;
+    top: -30px;
+    height: auto;
+    text-indent: 0;
+    text-align: right;
+    outline: none !important;
+}
+
+#cboxClose:hover,
+#cboxClose:focus {
+    color: #ffe400;
+    text-decoration: underline;
+}
+
+#cboxNext,
+#cboxPrevious {
+    width: 32px;
+    height: 32px;
+    top: auto;
+    bottom: 15px;
+    z-index: 1000;
+    opacity: 0.5;
+    border-radius: 100%;
+    outline: none !important;
+    background-color:#fff;
+    background-size: auto 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#cboxNext:hover,
+#cboxPrevious:hover {
+    opacity: 0.8;
+    background-position: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#cboxNext {
+    left: auto;
+    right: 15px;
+    background-image: url("/wp-content/themes/one-sixteen/images/cbox-arrow-right.png");
+}
+
+#cboxPrevious {
+    left: 15px;
+    right: auto;
+    background-image: url("/wp-content/themes/one-sixteen/images/cbox-arrow-left.png");
+}
+
+#colorbox, #cboxOverlay, #cboxWrapper {
+    overflow: visible !important;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    .desktop-only {
+        display: none;
+        visibility: hidden;
+    }
+    
+    .mobile-only {
+        display: block;
+        visibility: visible;
+    }
+
+    .gutter,
+    .gutter.narrow,
+    .gutter.extra-narrow {
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+
+
+}
+
+
+
+

@@ -1,0 +1,115 @@
+/* ========================= */
+/* === Content Accordion === */
+/* ========================= */
+
+#content-accordion {
+    margin-bottom: 100px;
+}
+
+#content-accordion .accordion:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+ .accordion {
+    margin-bottom: 60px;
+}
+
+.accordion .accordion-link {
+    background: none;
+    border: none;
+    width: 100%;
+    padding: 0;
+    outline-offset: 5px;
+    text-align: left;
+}
+
+.accordion .accordion-link:hover,
+.accordion .accordion-link:focus {
+    text-decoration: underline;
+}
+
+.accordion .accordion-link:focus {
+    outline: 1px dashed #666666;
+    outline-offset: 10px;
+}
+
+.accordion .accordion-link > h2,
+.accordion .accordion-link > h3 {
+    margin: 0;
+    position: relative;
+    padding-right: 80px;
+}
+
+.accordion .accordion-link .arrow {
+    height: 16px;
+    position: absolute;
+    top: 12px;
+    right: 0;
+    transform: rotate(0deg);
+    transition: 0.3s ease-in-out
+}
+
+.accordion .accordion-link.active .arrow {
+    transform: rotate(180deg);
+    transition: 0.3s ease-in-out
+}
+
+.accordion .accordion-content {
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.4s ease-in-out
+}
+
+.accordion .accordion-content.show {
+    opacity: 1;
+    max-height: 9000px;
+    transition: 0.4s ease-in-out
+}
+
+.accordion .accordion-content .inner {
+    padding-top: 40px;
+}
+
+.accordion .accordion-content a {
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,126 @@
+/* ========================== */
+/* === Content with Image === */
+/* ========================== */
+
+#content-with-image {
+    background: #ffffff;
+    padding-bottom: 120px;
+}
+
+#content-with-image .content .inner {
+    position: relative;
+}
+
+#content-with-image .content .inner.center {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#content-with-image .image img {
+    width: 100%;
+}
+
+#content-with-image.image-left .image img {
+    padding-right: 30px;
+}
+
+#content-with-image.image-right .image img {
+    padding-left: 30px;
+}
+
+#content-with-image.image-right .left-side,
+#content-with-image.image-left .right-side {
+    display: none;
+    visibility: hidden;
+}
+
+#content-with-image .link {
+    color: #000;
+    width: 220px;
+    text-align: center;
+    margin-top: 10px;
+} 
+
+#content-with-image .link:hover {
+    color: #fff;
+    background: #000;
+    border-color: #000;
+}
+
+#content-with-image .button {
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* ===================== */
+/* === Media Queries === */
+/* ===================== */
+
+/* Extra Large devices (desktops, less than 1281px) */
+@media (max-width: 1280.98px) {
+
+
+
+}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+    #content-with-image .content .inner {
+        top: auto !important;
+        transform: none !important;
+        /* padding: 0 40px; */
+    }
+
+    #content-with-image .button:nth-child(2) {
+        margin-top: 25px;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+
+    #content-with-image.image-left .image img {
+        padding-right: 15px;
+    }
+    
+    #content-with-image.image-right .image img {
+        padding-left: 15px;
+    }
+
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+
+    #content-with-image .image {
+        margin-bottom: 30px;
+    }
+
+    #content-with-image .image img {
+        padding: 0 !important;
+    }
+
+    #content-with-image.image-right .left-side {
+        display: block;
+        visibility: visible;
+    }
+
+    #content-with-image.image-right .right-side {
+        display: none;
+        visibility: hidden;
+    }
+
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+
+
+
+
+
+
