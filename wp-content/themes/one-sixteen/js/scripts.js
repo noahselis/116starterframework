@@ -3,34 +3,31 @@ $(document).ready(function(){
 	// =============== //
 	// == Overrides == //
 	// =============== //
-	
-	var elements = document.querySelectorAll("a, button, input, select, textarea");
-	elements.forEach(function(element) {
-		element.addEventListener("mousedown", function(event) {
-			event.preventDefault();
-			console.log("yes");
-		});
-	});
 
-	// =================== //
+    // Prevent focus state on click
+    $("a", "button", "input", "select", "textarea").mousedown(function(e){
+        e.preventDefault();
+    })
+
+    // =================== //
 	// == Header Scroll == //
 	// =================== //
 
 	var vertScrollStart = $('html').scrollTop() || $('body').scrollTop();
-	var lastScrollTop = 0;
+    var lastScrollTop = 0;
 
 	if(vertScrollStart <= 0) {
 		$( "#masthead.scroll-enabled" ).addClass("top");
 	}	
 
 	$(window).scroll(function() {
-		var vertScroll = $('html').scrollTop() || $('body').scrollTop();
-		if(vertScroll <= 0) {
-			$("#masthead.scroll-enabled").addClass("top");
-		}
-		else {
-			$( "#masthead.scroll-enabled" ).removeClass("top");
-		}	  
+	    var vertScroll = $('html').scrollTop() || $('body').scrollTop();
+	    if(vertScroll <= 0) {
+	        $("#masthead.scroll-enabled").addClass("top");
+	    }
+	    else {
+	    	$( "#masthead.scroll-enabled" ).removeClass("top");
+	    }	  
 	});
 
 	$(window).scroll(function(event) {
@@ -38,7 +35,7 @@ $(document).ready(function(){
 		if (st > lastScrollTop) {
 			$( "#masthead.scroll-enabled" ).addClass("hide"); // Downscroll
 		} 
-		else {
+        else {
 			$( "#masthead.scroll-enabled" ).removeClass("hide"); // Upscroll
 		}
 		if(lastScrollTop <= 0) {
@@ -47,7 +44,7 @@ $(document).ready(function(){
 		lastScrollTop = st;
 	});
 
-	// ==================== //
+    // ==================== //
 	// == Hamburger Menu == //
 	// ==================== //
 
@@ -66,7 +63,7 @@ $(document).ready(function(){
 	});
 
 
-	// ================== //
+    // ================== //
 	// == Menu Display == //
 	// ================== //
 
@@ -108,22 +105,6 @@ $(document).ready(function(){
 	}
 
 	// =================== //
-	// == Partner Logos == //
-	// =================== //
-
-	document.addEventListener("DOMContentLoaded", function() {
-		const button = document.querySelector("#featured-logos .viewlink button");
-		const secondaryLogos = document.querySelector("#featured-logos .secondary-logos");
-
-		button.addEventListener("click", function() {
-			const isOpened = secondaryLogos.classList.toggle("opened");
-			secondaryLogos.classList.toggle("closed", !isOpened);
-
-			button.textContent = isOpened ? "Show Less" : "View More";
-		});
-	});
-
-	// =================== //
 	// == Photo Gallery == //
 	// =================== //
 
@@ -145,4 +126,27 @@ $(document).ready(function(){
 	}
 
 }); 
+
+
+// ======================================= //
+// ========== VanillaJS Rewrite ===========//
+// ========================================//
+
+document.addEventListener("DOMContentLoaded", function() {
+
+	// =================== //
+	// == Partner Logos == //
+	// =================== //
+
+	const button = document.getElementById('featured-logos-button');
+	const secondaryLogos = document.querySelector("#featured-logos .secondary-logos");
+
+	button.addEventListener("click", function() {
+		const isOpened = secondaryLogos.classList.toggle("opened");
+		secondaryLogos.classList.toggle("closed", !isOpened);
+
+		button.textContent = isOpened ? "Show Less" : "View More";
+	});
+
+});
 

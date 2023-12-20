@@ -485,7 +485,7 @@
 							</div><!-- .secondary-logos -->
 						</div><!-- .logos -->
 						<div class="viewlink closed">
-							<button class="button style1 more">View More</button>
+							<button class="button style1 more" id='featured-logos-button'>View More</button>
 						</div><!-- .viewlink -->
 					</div><!-- .container-fluid -->
 				</section><!-- #featured-logos -->
